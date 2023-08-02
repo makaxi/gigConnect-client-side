@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./Gigs.scss";
-// dummy data:
-//import { gigs } from "../../data";
-import GigCard from "../../components/gigCard/GigCard";
-import { useQuery } from "@tanstack/react-query";
-import newRequest from "../../utils/newRequest";
 import {useLocation} from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import "./Gigs.scss";
+import GigCard from "../../components/gigCard/GigCard";
+import newRequest from "../../utils/newRequest";
 
 function Gigs() {
   const [sort, setSort] = useState("sales");
