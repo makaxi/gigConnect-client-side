@@ -6,8 +6,7 @@ import "./Review.scss"
 const Review = ({review}) => {
 
   const { isLoading, error, data } = useQuery({
-    // TODO: needs to be unique
-    queryKey: ['reviewUser'],
+    queryKey: [review.userId],
     queryFn: () =>
       newRequest.get(
         `/users/${review.userId}`)
