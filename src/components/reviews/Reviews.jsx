@@ -45,15 +45,19 @@ const Reviews = ({gigId}) => {
       }
       <div className="add">
         <h3>Add a review</h3>
-        <form action='' onSubmit={handleSubmit}>
+        <form action='' className ='addForm' onSubmit={handleSubmit}>
+          <div className='selectStar'>
+            <select name='' id=''>
+              <option value={1}> 1 </option>
+              <option value={2}> 2 </option>
+              <option value={3}> 3 </option>
+              <option value={4}> 4 </option>
+              <option value={5}> 5 </option>
+            </select>
+            {/* TODO: Make the number of stars that show up reactive to user selection */}
+            <img src="/img/star.png" alt=""></img>
+          </div>
           <input type='text' placeholder='Write your opinion' />
-          <select name='' id=''>
-            <option value={1}> 1 </option>
-            <option value={2}> 2 </option>
-            <option value={3}> 3 </option>
-            <option value={4}> 4 </option>
-            <option value={5}> 5 </option>
-          </select>
           <button>Send</button>          
         </form>
       </div>
