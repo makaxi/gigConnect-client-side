@@ -15,7 +15,6 @@ function Register() {
     isSeller: false,
     desc:"",
   });
-  console.log(user);
 
   const navigate = useNavigate();
 

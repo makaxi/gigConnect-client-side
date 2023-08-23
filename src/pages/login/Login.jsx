@@ -20,8 +20,7 @@ function Login() {
       setError(err.response.data);
     }
   };
-
-  console.log("help me");
+  
   return (
     <div className="login">
       <form onSubmit={handleSubmit}>
