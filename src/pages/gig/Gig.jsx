@@ -1,6 +1,6 @@
 import React from "react";
 import { Slider } from "infinite-react-carousel/lib";
-import {useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import "./Gig.scss";
 import newRequest from "../../utils/newRequest";
@@ -156,7 +156,9 @@ function Gig() {
               </div>
             ))}
           </div>
-          <button>Continue</button>
+          <Link to={`/pay/${id}`}>
+            <button>Continue</button>
+          </Link>
         </div>
       </div> 
       }
